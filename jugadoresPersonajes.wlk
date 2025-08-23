@@ -44,7 +44,7 @@ object mario(){
         valorRecolectado = valorRecolectado + elemento.valorOtorgado()
         ultimoElemento = elemento
     }
-    method esFeliz(){
-        return valorRecolectado > 50 || ultimoElemento.altura() >= 10
+    method estaFeliz(){
+        return valorRecolectado >= 50 || ultimoElemento.altura() >= 10
     }
 }
