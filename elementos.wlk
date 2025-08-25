@@ -19,28 +19,23 @@ object castillo {
 
 
 object aurora {
-  var viva = true
-  
+  var estaViva = true
   method altura() {
     return 1
-  }
-  
-  method recibirAtaque(potencia) {
-    if(potencia >= 10) {
-        estaViva = false
     }
-  }
+  method recibirAtaque(potencia) {
+    if(potencia>=10) {
+      estaViva=false
+      }
+    }
   method estaViva() {
     return estaViva
     }
-    
+  method recibirTrabajo() {  
+  }
   method valorOtorgado() {
-   return 15
-  }
-  
-  method recibirTrabajo() {
-  }
-
+    return 15
+    }
 }
 
 
